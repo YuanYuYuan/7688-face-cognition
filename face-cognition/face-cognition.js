@@ -55,7 +55,7 @@ server.listen(3000,function(){
 
       request({
           method: 'POST',
-          url: 'https://api.projectoxford.ai/face/v1.0/detect?returnFaceId=true&returnFaceAttributes=age,gender',
+          url:'https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceId=true&returnFaceAttributes=age,gender',
           headers: {
               'Content-Type': 'application/octet-stream',
               'Ocp-Apim-Subscription-Key': 'my-face-api-key'
